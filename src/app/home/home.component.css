@@ -1,0 +1,90 @@
+ /* .parallax-container {
+      height: 550px;
+    } */
+.letra{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+    .alineado{
+    text-align: center;
+}
+.alineado2{
+    text-align: left;
+}
+
+.parallax{
+    background-image: url("https://images5.alphacoders.com/374/thumb-1920-374329.jpg");
+    min-height: 400px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin:0px ;
+  
+    position:relative;
+
+}
+
+.parallax2{
+    background-image: url("https://furkids.org/images/uploads/target3.jpg");
+    min-height: 400px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin:0px ;
+  
+    position:relative;
+
+}
+
+@media only screen and (max-device-width: 1024px) {
+    .parallax {
+        background-attachment: scroll;
+        min-height: 200px;
+    }
+    .parallax2 {
+        background-attachment: scroll;
+        min-height: 200px;
+    }
+    h1{
+        font-size: 2em;
+    }
+    h2{
+        font-size:2em;
+    }
+    h5{
+        font-size:1em;
+    }
+  
+}
+
+#header{
+ position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+    width: 100%;
+    padding: 0px 20px;
+    margin: 0 auto;
+    vertical-align:middle;
+    text-align:center;
+    color: white;
+}
+
+#header2{
+    position: absolute;
+     top: 50%;
+     -webkit-transform: translateY(-50%);
+     -ms-transform: translateY(-50%);
+     transform: translateY(-50%);
+       width: 100%;
+       padding: 0px 20px;
+       margin: 0 auto;
+       vertical-align:middle;
+       text-align:center;
+       color: white;
+   }
+   .somb{
+       text-shadow: 2px 2px 5px #000;
+   }

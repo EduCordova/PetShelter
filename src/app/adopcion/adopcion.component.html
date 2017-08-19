@@ -1,0 +1,133 @@
+<div class="animated fadeIn">
+  <div class="row ">
+    <div class="col s12 alineado">
+      <h3 class="teal-text">{{title}}</h3>
+    </div>
+  </div>
+
+
+  <div class="row">
+    <!-- <div class="container" *ngIf="muestra">
+      <div class="input-field  col s12 m4 l4" *ngFor="let f of doto;let i = index; " >
+        <select materialize="material_select"  >
+        <option  value="" disabled selected >{{f.name}}</option>
+        <option value="1"   (click)="onSelected(f)" >{{f.d1}}</option>
+        <option value="2"  (click)="onSelected(f)">{{f.d2}}</option>
+        <option value="3"  (click)="onSelected(f)"*ngIf="oculto==f.d4" >{{f.d3}}</option>
+      </select>
+
+      </div>
+    </div> -->
+
+    <div class="container" *ngIf="muestra">
+      <!--SEXO  -->
+      <div class="input-field  col s12 m4 l4">
+        <select id="s1" materialize="material_select"
+         (ngModelChange)="onSelect($event)"
+          [ngModel]="model">
+          <option  disabled selected >Selecciona</option>
+          <option *ngFor="let p of sexo" [value]="p">{{p}}</option>
+      </select>
+        <label>Filtrando por Sexo </label>
+      </div>
+      <!-- TAMAÑO  -->
+      <div class="input-field  col s12 m4 l4">
+        <select id="s2" materialize="material_select"
+         (ngModelChange)="onSelect2($event)"
+          [ngModel]="model">
+          <option  disabled selected >Selecciona</option>
+          <option *ngFor="let p of tam" [value]="p">{{p}}</option>
+      </select>
+        <label>Filtrando por Tamaño </label>
+      </div>
+
+      <div class="input-field  col s12 m4 l4">
+        <select id="s3" materialize="material_select" 
+        (ngModelChange)="onSelect3($event)" 
+        [ngModel]="model">
+          <option  disabled selected >Selecciona</option>
+          <option *ngFor="let p of tipo" [value]="p">{{p}}</option>
+      </select>
+        <label>Filtrando por Tipo </label>
+      </div>
+  
+        <div class="  col s12 m12 l12">
+      <button class="btn waves-effect waves-light " (click)="todo()" >Resetear Opciones</button>
+    </div>
+
+    </div>
+
+    
+
+    
+  </div>
+
+
+  <!-- <div class="row">
+    <div class="container">
+      <ul>
+        <li *ngFor="let d of animals2">{{d.sexo}} || {{d.tam}} || {{d.tipo}} </li>
+      </ul>
+    </div>
+  </div> -->
+
+  <div class="row " *ngIf="muestra">
+
+  
+      <div class="alineado" *ngIf="rv">
+      <p >Se encontro {{ (perros | filtrocmb:filtro:filtro2:filtro3).length }} Resultado(s)</p>
+      </div>
+    <div class="col s12 m4 l3 animated fadeIn" *ngFor="let inf of (perros | filtrocmb:filtro:filtro2:filtro3); let i=index ; let last=last">
+
+     
+
+      <div class="card hoverable ">
+        <div class="card-image waves-effect waves-block waves-light">
+          <img class="activator" src="{{inf.img}} ">
+        </div>
+        <div class=" card-content alineado">
+          <span class="card-title activator grey-text text-darken-4 " >{{inf.nombre}} 
+            <!-- <i class="material-icons right">more_vert</i>  -->
+          </span>
+        
+          <p>
+          
+            <a class="btn-floating btn-large waves-effect waves-light teal" (click)="env(inf.id)"><i class="material-icons">pets</i></a>
+
+          </p>
+        </div>
+
+        <!-- <div class="card-reveal">
+          <span class="card-title grey-text text-darken-4">Hola soy {{inf.nombre}}<i class="material-icons right">close</i></span>
+          <p> Animal : {{inf.tipo}} </p>
+          <p>Tamaño: {{inf.altura}} </p>
+          <p>Sexo: {{inf.sexo}} </p>
+        </div> -->
+      </div>
+
+     
+    </div>
+  </div>
+</div>
+
+
+
+<!-- MODAL----!!!!! 
+  <div id="adoptar" class="modal modal-fixed-footer" materialize="modal">
+  <div class="modal-content">
+    <h4>FIRULAIS {{gd.id}} </h4>
+   <div class="video-container  tam">
+        <iframe  src="//www.youtube.com/embed/o6ymMp6yBkQ" frameborder="0" allowfullscreen></iframe>
+      </div>
+     
+  </div>
+  <div class="modal-footer">
+   
+    <a class="modal-action modal-close waves-effect waves-red btn-flat">Salir</a>
+  </div>
+</div> -->
+
+
+<div class="my-container animated fadeIn">
+  <ngx-loading [show]="loading" [config]="{ backdropBorderRadius: '14px' }"></ngx-loading>
+</div>

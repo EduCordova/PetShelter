@@ -1,0 +1,66 @@
+.pad{
+    margin-left: 15px;
+    
+}
+
+.borde{
+    margin-bottom: 2em;
+}
+
+
+ .body {
+    display: flex;
+    min-height:82vh;
+    flex-direction: column;
+    
+    /* margin-top: 110px; */
+  }
+
+  main {
+    flex: 1 0 auto;
+  }
+      
+  .route-container {
+    position:relative;
+}
+.route-container>* {
+    display:block;
+}
+
+#formt{
+    color: white;
+    text-align: center;
+
+}
+
+
+
+.navbar-fixed-2 {
+    
+    z-index: 999;
+     position: fixed; 
+    width: 100%;
+    top: 0;
+    
+}
+
+
+.sobre{
+    position: relative;
+    z-index: 999;
+}
+
+/* mover el menu */
+.tam{
+  font-size: 2em;
+  
+   
+}
+
+@media only screen and (max-device-width: 1024px) {
+
+    .pad{
+        font-size:1.5em;
+    }
+  
+}

@@ -1,0 +1,84 @@
+<div class="marg animated fadeIn" *ngIf="ocultar">
+
+  <div class="row">
+    <div class="container cont animated fadeIn">
+
+      <!-- <button  routerLink="/adopcion" class="btn waves-effect waves-light blue">
+    <i class="material-icons">keyboard_backspace</i>
+  </button> -->
+
+      <!-- <a routerLink="/adopcion" class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">keyboard_backspace</i></a> -->
+      <a routerLink="/adopcion">Adopta</a> <i class="material-icons">keyboard_arrow_right</i> <a class="color2">Descripcion</a>
+    </div>
+  </div>
+
+  <div class="row ">
+    <div class="container  ">
+      <div class="col s12 m7 l7 color">
+        <table>
+          <thead >
+            <tr >
+              <th>{{nombre}} </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let t of tabla">
+              <td class="marca">{{t.title}} </td>
+              <td>{{t.info}}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="col s12 m5 l5 color desl ">
+        <!-- <img class="materialboxed" src="{{data.url}}" width="100px">
+          <br>
+            <img class="materialboxed" src="{{data.url}}" width="100px">
+            <br>
+             <img class="materialboxed" src="{{data.url}}" width="100px"> -->
+
+        <img class="materialboxed circle col s12" src="{{img}}"  materialize="materialbox">
+      </div>
+
+    </div>
+
+
+  </div>
+
+  <div class="row animated fadeIn" >
+    <div class="container color ">
+      
+      <h3 class="cont"><i class="medium material-icons">ondemand_video</i></h3>
+    
+
+      <!-- <div class="carousel carousel-slider" data-indicators="true">
+     
+
+        <a class="carousel-item"><img src="https://lorempixel.com/800/400/food/2" ></a>
+        <a class="carousel-item"><img src="https://lorempixel.com/800/400/food/3"></a>
+        <a class="carousel-item"><img src="https://lorempixel.com/800/400/food/4"></a>
+        <a class="carousel-item"><img src="{{img}}" ></a>
+      </div> -->
+
+       <div class="video-container">
+        <iframe  src="//www.youtube.com/embed/Pv9cf4BfkaI" frameborder="0" allowfullscreen></iframe>
+      
+      </div>
+
+
+    </div>
+
+  </div>
+
+  <div class="row ">
+    <div class="container color">
+      <button class="btn waves-effect waves-light blue">Adoptar</button>
+    </div>
+  </div>
+
+</div>
+
+
+<!-- <div class="my-container animated fadeIn">
+  <ngx-loading [show]="loading" [config]="{ backdropBorderRadius: '14px' }"></ngx-loading>
+</div> -->

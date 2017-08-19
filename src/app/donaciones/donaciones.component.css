@@ -1,0 +1,13 @@
+.alineado{
+    text-align: center;
+}
+
+
+.cont {
+display: flex;
+}
+
+.cont2 {
+display: flex;
+text-align: center;
+}

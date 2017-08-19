@@ -1,0 +1,14 @@
+img{
+     
+   display: block;
+   margin: 0 auto 0 auto;
+  
+
+}
+
+.alinear{
+    text-align: center;
+}
+.deco>h6{
+    font-weight:bold;
+}

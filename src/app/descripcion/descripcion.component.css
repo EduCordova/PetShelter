@@ -1,0 +1,38 @@
+.color2{
+    color: black
+}
+
+
+.cont {
+display: flex;
+}
+.cont2 {
+display: flex;
+text-align: center;
+}
+ 
+
+.color{
+   
+    text-align: center;
+}
+
+table th{
+    text-align: center;
+    font-size: 2em
+    
+
+}
+
+.marca{
+    font-weight: bold;
+    /* text-align: right; */
+}
+
+.marg{
+    margin-top:20px;
+}
+
+.desl{
+    margin-top:25px;
+}
