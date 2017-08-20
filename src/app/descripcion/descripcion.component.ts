@@ -48,7 +48,7 @@ export class DescripcionComponent implements OnInit {
             { title: 'Edad', info: '4 años' },
             { title: 'Tamaño', info: this.data.altura },
             { title: 'Sexo', info: this.data.sexo },
-            { title: 'Sobre mi', info: "me shamo prrom"}
+            { title: 'Sobre mi', info: "##########"}
           ]
 
          
