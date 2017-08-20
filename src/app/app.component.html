@@ -34,7 +34,7 @@
           
              <ul class="side-nav  mov" id="mobile-demo">
                <li id="formt" class="teal"><b>MENU</b></li>
-               <li routerLinkActive="active {{color}}"  *ngFor="let r of rutas"><a routerLink="{{r.ruta}}" > <i class="material-icons ">{{r.icon}}</i>{{r.nombre}} </a></li>
+               <li (click)="up()" routerLinkActive="active {{color}}"  *ngFor="let r of rutas"><a routerLink="{{r.ruta}}" > <i class="material-icons ">{{r.icon}}</i>{{r.nombre}} </a></li>
              </ul>
 
           <ul id="nav-mobile" class="right hide-on-med-and-down">
