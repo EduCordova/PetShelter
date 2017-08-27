@@ -24,7 +24,7 @@ const routes: Routes = [
     },
     { path: 'nosotros', component: InformacionComponent  },
     { path: 'donaciones', component: DonacionesComponent },
-    { path:':formulario',component:FormComponent},
+    { path:'formulario',component:FormComponent},
     { path: '**', component: NotFoundComponent }
 ];
 
