@@ -7,6 +7,8 @@ import { InformacionComponent } from './informacion/informacion.component'
 import { DonacionesComponent } from './donaciones/donaciones.component'
 import { NotFoundComponent } from './not-found/not-found.component'
 import { DescripcionComponent } from './descripcion/descripcion.component'
+import {FormComponent} from './form/form.component'
+
 
 const routes: Routes = [
     { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -14,13 +16,15 @@ const routes: Routes = [
     {
         path: 'adopcion', children: [
             { path: '', component: AdopcionComponent },
-            { path: ':id', component: DescripcionComponent }
+            { path: ':id', component: DescripcionComponent},
+            
+            
 
         ]
     },
     { path: 'nosotros', component: InformacionComponent  },
     { path: 'donaciones', component: DonacionesComponent },
-
+    { path:':formulario',component:FormComponent},
     { path: '**', component: NotFoundComponent }
 ];
 

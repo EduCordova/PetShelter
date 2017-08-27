@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule} from '@angular/core';
-import {FormsModule} from '@angular/forms'
+import {FormsModule,ReactiveFormsModule} from '@angular/forms'
 import {HttpModule} from '@angular/http'
 import { MaterializeModule } from 'angular2-materialize';
 import { AppComponent } from './app.component';
@@ -17,7 +17,10 @@ import { NotFoundComponent } from './not-found/not-found.component';
 import { LoadingComponent } from './loading/loading.component';
 import { LoadingModule , ANIMATION_TYPES} from 'ngx-loading';
 import { DescripcionComponent } from './descripcion/descripcion.component';
-import {FiltradoCombos} from './app.pipe'
+import {FiltradoCombos} from './app.pipe';
+import { FormComponent } from './form/form.component';
+
+
 
 
 //firebase
@@ -42,7 +45,9 @@ import {FiltradoCombos} from './app.pipe'
     NotFoundComponent,
     LoadingComponent,
     DescripcionComponent,
-    FiltradoCombos
+    FiltradoCombos,
+    FormComponent
+ 
   
    
   ],
@@ -54,6 +59,7 @@ import {FiltradoCombos} from './app.pipe'
     MaterializeModule,
     HttpModule,
     FormsModule,
+    ReactiveFormsModule,
     RoutingModule,
     LoadingModule.forRoot({
       animationType: ANIMATION_TYPES.rectangleBounce,

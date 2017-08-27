@@ -3,6 +3,7 @@
 }
 
 
+
 .cont {
 display: flex;
 }
@@ -46,3 +47,16 @@ table th{
 .fontz{
     font-size: 3em;
 }
+
+@media only screen and (max-device-width: 1024px) {
+    h3{
+        font-size: 1.7em;
+   
+    }
+   
+    .col.s12 > .btn{
+       width: 100%;
+    }
+   
+     
+   }

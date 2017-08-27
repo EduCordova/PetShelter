@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ServiceModule } from '../app.service'
-import { ActivatedRoute } from '@angular/router'
+import { ActivatedRoute,Router } from '@angular/router'
+
 declare var $: any
 
 @Component({
@@ -19,7 +20,7 @@ export class DescripcionComponent implements OnInit {
   img:string
   nombre:string
   ocultar:boolean=true
-  constructor(private service: ServiceModule, private acty: ActivatedRoute) {
+  constructor(private service: ServiceModule, private acty: ActivatedRoute,private router:Router) {
   
    }
 
@@ -59,6 +60,18 @@ export class DescripcionComponent implements OnInit {
 
   
 
+
+
   }
+
+
+
+ ruta(){
+
+  this.router.navigate(['/','formulario']);
+  document.body.scrollTop = 0; // For Chrome, Safari and Opera 
+  document.documentElement.scrollTop = 0;
+
+ }
 
 }

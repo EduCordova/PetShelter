@@ -14,3 +14,16 @@
     margin-top: 8px;
     margin-left: 1px;
 }
+
+@media only screen and (max-device-width: 1024px) {
+    h3{
+        font-size: 1.7em;
+   
+    }
+   
+    .col.s12 > .btn{
+       width: 100%;
+    }
+   
+     
+   }

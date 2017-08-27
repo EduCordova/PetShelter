@@ -1,0 +1,21 @@
+.alineado{
+    text-align: center;
+}
+
+
+@media only screen and (max-device-width: 1024px) {
+ h3{
+     font-size: 1.7em;
+
+ }
+
+ .col.s12 > .btn{
+    width: 100%;
+ }
+
+  
+}
+
+.col.l8 > .btn{
+    width: 100%;
+ }
