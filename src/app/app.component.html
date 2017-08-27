@@ -30,11 +30,14 @@
     <nav class="teal ">
         <div class="nav-wrapper cont">
           <a  (click)="up()" routerLink='' class="brand-logo  pad ">PET SHELTER</a>
-          <a href="#" data-activates="mobile-demo" class="button-collapse" materialize="sideNav" [materializeParams]="[{menuWidth: 300,edge: 'left', closeOnClick: true, draggable: true}]"><i class="material-icons">menu</i></a>
+          <a href="#" data-activates="mobile-demo" class="button-collapse" materialize="sideNav" [materializeParams]="[{menuWidth: 300,edge: 'left', closeOnClick: true, draggable: true}]"><div class="ubi"><span class="icon-menu2"></span></div></a>
           
              <ul class="side-nav  mov" id="mobile-demo">
-               <li id="formt" class="teal"><b>MENU</b></li>
-               <li (click)="up()" routerLinkActive="active {{color}}"  *ngFor="let r of rutas"><a routerLink="{{r.ruta}}" > <i class="material-icons ">{{r.icon}}</i>{{r.nombre}} </a></li>
+               <li id="formt" class="teal"><a class="icon-keyboard_backspace"></a> </li>
+               <li (click)="up()" routerLinkActive="active {{color}}"  *ngFor="let r of rutas"><a routerLink="{{r.ruta}}" >
+            
+                    <span class="{{r.icon}}"></span>
+                  &nbsp;&nbsp;&nbsp;&nbsp;{{r.nombre}} </a></li>
              </ul>
 
           <ul id="nav-mobile" class="right hide-on-med-and-down">
@@ -52,25 +55,28 @@
   <router-outlet></router-outlet>
 </div>
 
-<footer class="page-footer grey darken-2">
+<footer class="page-footer teal">
   <div class="container">
     <div class="row">
-      <div class="col l6 s12">
-        <h4 class=" white-text ">PET SHELTER</h4>
+      <div class="col l6 s12 alinea">
+        <span class="icon-pets"></span> Pet Shelter
+   
       
       </div>
 
 
-      <div class="col l4 offset-l2 s12">
-          <h6 class=" white-text ">Contactanos</h6>
-      <a href="#"  class="tam"><span  class="white-text socicon socicon-twitter" ></span> </a>
-      <a href="#" class="tam"><span class="white-text socicon socicon-facebook"></span> </a>
-      <a href="#" class="tam"><span class="white-text socicon socicon-youtube"></span></a>
+      <div class="col l4 offset-l2 s12 alinea">
+      <br>
+      <a href="#" ><span  id="sob" class="icon-facebook2"></span> </a> &nbsp;&nbsp;
+      <!-- <a href="#" ><span id="sob" class="icon-twitter"></span> </a> &nbsp;&nbsp; -->
+      <a href="#" ><span id="sob" class="icon-youtube2"></span></a> &nbsp;
 
        </div>
       
     </div>
   </div>
+
+  
 
   <div class="footer-copyright">
     <div class="container">

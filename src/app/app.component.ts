@@ -17,10 +17,10 @@ export class AppComponent {
   
   //  nav = new EventEmitter<any|MaterializeAction>();
   rutas = [
-    { ruta: "/home", nombre: "Home" ,icon:"home" },
-    { ruta: "/adopcion", nombre: "Adopta" ,icon:"pets"},
-    { ruta: "/nosotros", nombre: "Conocenos" ,icon:"people"},
-    { ruta: "/donaciones", nombre: "Donaciones",icon:"redeem" }
+    { ruta: "/home", nombre: "Home" ,icon:"icon-home" },
+    { ruta: "/adopcion", nombre: "Adopta" ,icon:"icon-paw"},
+    { ruta: "/nosotros", nombre: "Conocenos" ,icon:"icon-users"},
+    { ruta: "/donaciones", nombre: "Donaciones",icon:"icon-gift" }
   ];
   constructor() {
 

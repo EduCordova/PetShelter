@@ -134,8 +134,8 @@ export class FiltradoCombos implements PipeTransform {
 
         //     })
         // }
-        console.log(filtro + " y " + filtro2 + " y " + filtro3)
-        console.log(result)
+        // console.log(filtro + " y " + filtro2 + " y " + filtro3)
+        // console.log(result)
        
         return result
 

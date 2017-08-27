@@ -11,3 +11,26 @@ display: flex;
 display: flex;
 text-align: center;
 }
+
+
+.icon-location{
+    font-size: 2em;
+    color: #EF1C1C;
+}
+
+.icon-facebook2{
+    font-size: 2em;
+    color: #2D44BF;
+}
+.icon-whatsapp{
+    font-size: 2em;
+    color: #0BB074;
+}
+.icon-dollar2{
+    font-size: 2em;
+    color: #0F9745;
+}
+.icon-office{
+    font-size: 1.5em;
+    color: #FFFBFB;
+}

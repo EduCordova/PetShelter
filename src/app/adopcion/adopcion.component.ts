@@ -93,7 +93,7 @@ export class AdopcionComponent implements OnInit {
 
   onSelect(event) {
     this.filtro = event
-    console.log(this.filtro)
+    // console.log(this.filtro)
 
     if(event!=""){
       this.rv=true
@@ -102,14 +102,14 @@ export class AdopcionComponent implements OnInit {
 
   onSelect2(event) {
     this.filtro2 = event
-    console.log(this.filtro2)
+    // console.log(this.filtro2)
       if(event!=""){
       this.rv=true
     }
   }
   onSelect3(event) {
     this.filtro3 = event
-    console.log(this.filtro2)
+    // console.log(this.filtro2)
       if(event!=""){
       this.rv=true
     }

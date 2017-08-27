@@ -1,6 +1,4 @@
- /* .parallax-container {
-      height: 550px;
-    } */
+
 .letra{
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
 }
@@ -37,27 +35,7 @@
 
 }
 
-@media only screen and (max-device-width: 1024px) {
-    .parallax {
-        background-attachment: scroll;
-        min-height: 200px;
-    }
-    .parallax2 {
-        background-attachment: scroll;
-        min-height: 200px;
-    }
-    h1{
-        font-size: 2em;
-    }
-    h2{
-        font-size:2em;
-    }
-    h5{
-        font-size:1em;
-    }
 
-  
-}
 
 #header{
  position: absolute;
@@ -89,3 +67,42 @@
    .somb{
        text-shadow: 2px 2px 5px #000;
    }
+/* ICONOS */
+
+.icon-shield{
+    font-size: 4em;
+    color: green;
+}
+
+.icon-paw{
+    font-size: 4em;
+    color:brown;
+}
+
+.icon-aid-kit{
+    font-size: 4em;
+    color:red;
+    
+}
+
+   @media only screen and (max-device-width: 1024px) {
+    .parallax {
+        background-attachment: scroll;
+        min-height: 200px;
+    }
+    .parallax2 {
+        background-attachment: scroll;
+        min-height: 200px;
+    }
+    h1{
+        font-size: 2em;
+    }
+    h2{
+        font-size:2em;
+    }
+    h5{
+        font-size:1em;
+    }
+
+  
+}

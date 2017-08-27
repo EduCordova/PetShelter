@@ -3,6 +3,11 @@
     
 }
 
+
+.icon-pets{
+    font-size: 3em;
+}
+
 .borde{
     margin-bottom: 2em;
 }
@@ -29,7 +34,8 @@
 
 #formt{
     color: white;
-    text-align: center;
+
+    text-align: left;
 
 }
 
@@ -51,21 +57,59 @@
 }
 
 /* mover el menu */
-.tam{
+.icon-facebook2{
   font-size: 2em;
-  
-   
+  color: white;
 }
 
+.icon-twitter{
+    font-size: 2em;
+    color: white;
+  }
+
+  .icon-youtube2{
+    font-size: 2em;
+    color: white;
+  }
+
+#sob:hover{
+    color: black;
+}
 /* .cont{
     margin-left:40px;
     margin-right: 100px;
 } */
 
+.icon-menu2{
+    color: white;
+    font-size: 30px;
+}
+.ubi{
+    margin-top: 8px;
+}
+
+
+.icon-keyboard_backspace{
+    color: white;
+    font-size: 30px;
+}
+
+.icon-users,.icon-paw,.icon-gift,.icon-home{
+    font-size: 1.4em;
+  color:black;
+}
+
+.alinea{
+    
+}
+
 @media only screen and (max-device-width: 1024px) {
 
     .pad{
         font-size:1.5em;
+    }
+    .alinea{
+        text-align: center;
     }
     /* .cont{
         margin-left:auto;
