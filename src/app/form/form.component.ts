@@ -21,7 +21,9 @@ export class FormComponent implements OnInit {
 
   enviar(){
     
-  this.router.navigate(['/']);
+   
+
+  //  this.router.navigate(['/']);
   document.body.scrollTop = 0; // For Chrome, Safari and Opera 
   document.documentElement.scrollTop = 0;
   }
