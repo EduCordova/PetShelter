@@ -48,7 +48,7 @@ table th{
     font-size: 3em;
 }
 
-@media only screen and (max-device-width: 1024px) {
+@media only screen and (max-device-width: 900px) {
     h3{
         font-size: 1.7em;
    
@@ -60,3 +60,7 @@ table th{
    
      
    }
+
+   .col.l4 > .btn{
+    width: 100%;
+ }
