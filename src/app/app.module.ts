@@ -14,7 +14,6 @@ import { HomeComponent } from './home/home.component';
 import { DonacionesComponent } from './donaciones/donaciones.component';
 import { InformacionComponent } from './informacion/informacion.component';
 import { NotFoundComponent } from './not-found/not-found.component';
-import { LoadingComponent } from './loading/loading.component';
 import { LoadingModule , ANIMATION_TYPES} from 'ngx-loading';
 import { DescripcionComponent } from './descripcion/descripcion.component';
 import {FiltradoCombos} from './app.pipe';
@@ -43,7 +42,6 @@ import { FormComponent } from './form/form.component';
     DonacionesComponent,
     InformacionComponent,
     NotFoundComponent,
-    LoadingComponent,
     DescripcionComponent,
     FiltradoCombos,
     FormComponent
