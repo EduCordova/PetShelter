@@ -12,11 +12,10 @@ display: flex;
 text-align: center;
 }
  
-
-.color{
-   
-    text-align: center;
+.title{
+   font-size: 2em;
 }
+
 
 table th{
     text-align: center;
@@ -36,6 +35,10 @@ table th{
 
 .desl{
     margin-top:25px;
+    
+}
+.desl2{
+    padding: 10px;
 }
 
 
@@ -44,9 +47,19 @@ table th{
     font-size: 3em;
 }
 
-.fontz{
+/* .fontz{
     font-size: 3em;
+
+} */
+
+#posi{
+    margin:0px;
 }
+
+.icon-chevron-right{
+    font-size: 1.5em;
+}
+
 
 @media only screen and (max-device-width: 900px) {
     h3{

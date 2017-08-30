@@ -99,11 +99,11 @@
   color:black;
 }
 
-.alinea{
-    
+.icon-home,.icon-paw,.icon-users, .icon-gift{
+    color :#616161;
 }
 
-@media only screen and (max-device-width: 1024px) {
+@media only screen and (max-device-width: 900px) {
 
     .pad{
         font-size:1.5em;
@@ -116,4 +116,14 @@
         margin-right: auto;
     } */
   
+  
+}
+
+.camb{
+   padding: 2px;
+  
+}
+
+.pw{
+color:white;
 }

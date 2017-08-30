@@ -13,7 +13,7 @@ declare var $:any
 })
 export class AppComponent {
 
-  color = " teal lighten-3";
+  color = " grey lighten-2";
   
   //  nav = new EventEmitter<any|MaterializeAction>();
   rutas = [
