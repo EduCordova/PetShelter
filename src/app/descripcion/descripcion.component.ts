@@ -15,7 +15,7 @@ export class DescripcionComponent implements OnInit {
   private data:any
   
 
-  private tabla = new Array()
+  public tabla = new Array()
   private loading: boolean;
   img:string
   nombre:string
