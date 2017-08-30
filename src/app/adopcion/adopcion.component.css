@@ -17,6 +17,7 @@
 
 
 
+
 @media only screen and (max-device-width: 900px) {
     h3{
         font-size: 1.7em;
@@ -26,6 +27,11 @@
     .col.s12 > .btn{
        width: 100%;
     }
+    b{
+        font-size: 0.7em;
+    }
+
+  
    
      
    }

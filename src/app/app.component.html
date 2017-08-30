@@ -33,7 +33,7 @@
           <a href="#" data-activates="mobile-demo" class="button-collapse" materialize="sideNav" [materializeParams]="[{menuWidth: 300,edge: 'left', closeOnClick: true, draggable: true}]"><div class="ubi"><span class="icon-menu2"></span></div></a>
           
              <ul class="side-nav  mov" id="mobile-demo">
-               <li id="formt" class="teal"><a class="icon-keyboard_backspace"></a> </li>
+               <li id="formt" class="teal lighten-2"><a class="icon-keyboard_backspace"></a> </li>
                <li (click)="up()" routerLinkActive="active {{color}}"  *ngFor="let r of rutas"><a routerLink="{{r.ruta}}" >
             
                     <span class="{{r.icon}}"></span>
@@ -55,17 +55,17 @@
   <router-outlet></router-outlet>
 </div>
 
-<footer class="page-footer teal darken-2">
+<footer class="page-footer teal ">
   <div class="container">
     <div class="row">
-      <div class="col l6 s12 alinea">
+      <div class="col  s12  l4 alinea">
         <span class="icon-pets"></span> Pet Shelter
    
       
       </div>
 
 
-      <div class="col l4 offset-l2 s12 alinea">
+      <div class="col  s12   l3 push-l6 alinea">
       <br>
       <a href="#" ><span  id="sob" class="icon-facebook2"></span> </a> &nbsp;&nbsp;
       <!-- <a href="#" ><span id="sob" class="icon-twitter"></span> </a> &nbsp;&nbsp; -->
@@ -81,7 +81,7 @@
   <div class="footer-copyright">
     <div class="container">
       © 2017 All Right Reserved.
-      <a class="grey-text text-lighten-4 right" href="https://github.com/EduCordova/" target="_blank">Developed by Edu C.  </a>
+      <a class="grey-text text-lighten-4 right" href="https://github.com/EduCordova/" target="_blank">Developed by EC  </a>
     </div>
   </div>
 </footer>

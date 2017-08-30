@@ -6,7 +6,7 @@
     text-align: center;
 }
 .alineado2{
-    text-align: left;
+    text-align: center;
 }
 
 .parallax{
@@ -69,19 +69,19 @@
    }
 /* ICONOS */
 
-.icon-shield{
+.icon-verified_user{
     font-size: 4em;
-    color: green;
+    color: #5F625F;
 }
 
 .icon-paw{
     font-size: 4em;
-    color:brown;
+    color: #5F625F;
 }
 
 .icon-aid-kit{
     font-size: 4em;
-    color:red;
+    color: #5F625F;
     
 }
 

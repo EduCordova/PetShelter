@@ -77,40 +77,43 @@
       <div class="alineado" *ngIf="rv">
       <p >Se encontro {{ (perros | filtrocmb:filtro:filtro2:filtro3).length }} Resultado(s)</p>
       </div>
-    <div class="col s12 m4 l3 animated fadeIn" *ngFor="let inf of (perros | filtrocmb:filtro:filtro2:filtro3); let i=index ; let last=last">
+    <div class="col s6 m4 l3 animated fadeIn" *ngFor="let inf of (perros | filtrocmb:filtro:filtro2:filtro3); let i=index ; let last=last">
 
      
 
-      <div class="card hoverable ">
+      <!-- <div class="card hoverable ">
         <div class="card-image  waves-block  ">
-          <img src="{{inf.img}}" >
+          <img src="{{inf.img}}"  >
           <div class="btnf">
           
           </div>
         </div>
         <div class=" card-content alineado">
           <span class="card-title  grey-text text-darken-4 " >{{inf.nombre}} 
-            <!-- <i class="material-icons right">more_vert</i>  -->
+         
           </span>
         
-          <!-- <p>
+          <p>
           
             <a class="btn-floating btn-large waves-effect waves-light blue" (click)="env(inf.id)"><div class="ali"><span class="icon-paw "></span></div></a>
 
-          </p> -->
-
-          <a class="btn waves-effect waves-light orange" (click)="env(inf.id)">CONOCEME</a>
-          
-
+          </p>
         </div>
+  
+      </div> -->
 
-        <!-- <div class="card-reveal">
-          <span class="card-title grey-text text-darken-4">Hola soy {{inf.nombre}}<i class="material-icons right">close</i></span>
-          <p> Animal : {{inf.tipo}} </p>
-          <p>Tamaño: {{inf.altura}} </p>
-          <p>Sexo: {{inf.sexo}} </p>
-        </div> -->
+      <div class="card">
+        <div class="card-image">
+          <img src="{{inf.img}}">
+        
+          <a class="btn-floating btn-large halfway-fab waves-effect waves-light red" (click)="env(inf.id)"><div class="ali"><span class="icon-paw"></span></div></a>
+        </div>
+        <div class="card-content alineado">
+          <span class="card-title"><b>{{inf.nombre}}</b></span>
+        </div>
       </div>
+
+
 
      
     </div>
