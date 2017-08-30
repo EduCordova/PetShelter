@@ -82,19 +82,26 @@
      
 
       <div class="card hoverable ">
-        <div class="card-image  waves-block ">
-          <img src="{{inf.img}} ">
+        <div class="card-image  waves-block  ">
+          <img src="{{inf.img}}" >
+          <div class="btnf">
+          
+          </div>
         </div>
         <div class=" card-content alineado">
           <span class="card-title  grey-text text-darken-4 " >{{inf.nombre}} 
             <!-- <i class="material-icons right">more_vert</i>  -->
           </span>
         
-          <p>
+          <!-- <p>
           
-            <a class="btn-floating btn-large waves-effect waves-light teal" (click)="env(inf.id)"><div class="ali"><span class="icon-paw "></span></div></a>
+            <a class="btn-floating btn-large waves-effect waves-light blue" (click)="env(inf.id)"><div class="ali"><span class="icon-paw "></span></div></a>
 
-          </p>
+          </p> -->
+
+          <a class="btn waves-effect waves-light orange" (click)="env(inf.id)">CONOCEME</a>
+          
+
         </div>
 
         <!-- <div class="card-reveal">

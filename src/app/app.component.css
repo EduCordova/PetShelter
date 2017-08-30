@@ -102,6 +102,10 @@
 .icon-home,.icon-paw,.icon-users, .icon-gift{
     color :#616161;
 }
+.camb{
+    padding: 2px;
+ margin-left: 250px;
+ }
 
 @media only screen and (max-device-width: 900px) {
 
@@ -115,14 +119,15 @@
         margin-left:auto;
         margin-right: auto;
     } */
-  
+    
+    .camb{
+    
+     margin-left: -40px;
+     }
   
 }
 
-.camb{
-   padding: 2px;
-  
-}
+
 
 .pw{
 color:white;
