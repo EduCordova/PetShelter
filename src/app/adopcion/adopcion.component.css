@@ -15,7 +15,37 @@
     margin-left: 1px;
 }
 
+.altura{
+    height:400px;
+}
+@media  (min-width:1440px) and (max-width:2560px) {
+    .altura{
+        height: 440px;
+    }
+}
 
+@media  (min-width:1024px) and (max-width:1440px) {
+    .altura{
+        height: 320px;
+    }
+}
+
+@media  (min-width:768px) and (max-width:1024px) {
+    .altura{
+        height: 250px;
+    }
+}
+@media  (min-width:320px) and (max-width:767px) {
+    .altura{
+        height: 160px;
+    }
+}
+
+@media (max-width:320px) {
+    .altura{
+        height: 150px;
+    }
+}
 
 
 @media only screen and (max-device-width: 900px) {

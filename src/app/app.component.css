@@ -1,5 +1,8 @@
 .pad{
     margin-left: 15px;
+
+       
+ 
     
 }
 
@@ -107,6 +110,21 @@
  margin-left: 250px;
  }
 
+ @media (max-width:1000px) {
+    .pad {
+      font-size:1.5em;
+    }
+    .alinea{
+        text-align: center;
+    }
+
+    .camb{
+        
+         margin-left: -40px;
+         }
+  }
+
+
 @media only screen and (max-device-width: 900px) {
 
     .pad{
@@ -115,6 +133,8 @@
     .alinea{
         text-align: center;
     }
+
+    
     /* .cont{
         margin-left:auto;
         margin-right: auto;
